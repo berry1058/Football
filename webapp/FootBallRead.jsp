@@ -14,7 +14,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-lg-12">
-						<h1>49ers Current PLayer Roster</h1>
+						<h1>49ers Current Player Roster</h1>
 						
 						<table style="width: 80%;">
 							<tr>
@@ -28,8 +28,8 @@
 							<% DAO.readFromDB(); %>
 							<% 
 							footBall readToJSP = new footBall();
-//							for(int i = 0;i< DAO.ourfootBall.size();i++){ 
-//							readToJSP = DAO.ourfootBall.get(i);
+							for(int i = 0;i< DAO.ourfootBall.size();i++){ 
+							readToJSP = DAO.ourfootBall.get(i);
 							
 							%>
 							<tr>
@@ -43,9 +43,9 @@
 							
 							<%
 							
-	//						} 
+							} 
 							
-//							DAO.ourfootBall.clear();
+							DAO.ourfootBall.clear();
 							%>
 						</table>
 

@@ -15,6 +15,7 @@ public class DAO {
 	static final String USER = "root";
 	static final String PASSWORD = "sesame";
 	static Scanner keyboard = new Scanner(System.in);
+	public static final ArrayList<footBall> ourfootBall = new ArrayList<>();
 
 	static Connection CONN = null;
 	static Statement STMT = null;
@@ -36,7 +37,7 @@ public class DAO {
 	public static void readFromDB() {
 		ConnToDB();
 
-		ArrayList<footBall> ourfootBall = new ArrayList<>();
+//		ArrayList<footBall> ourfootBall = new ArrayList<>();
 		try {
 			STMT = CONN.createStatement();
 			RES_SET = STMT.executeQuery("SELECT * FROM football.football_players;");
