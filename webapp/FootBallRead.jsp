@@ -28,8 +28,8 @@
 							<% DAO.readFromDB(); %>
 							<% 
 							footBall readToJSP = new footBall();
-							for(int i = 0;i< DAO.ourfootBall.size();i++){ 
-							readToJSP = DAO.ourfootBall.get(i);
+//							for(int i = 0;i< DAO.ourfootBall.size();i++){ 
+//							readToJSP = DAO.ourfootBall.get(i);
 							
 							%>
 							<tr>
@@ -43,9 +43,9 @@
 							
 							<%
 							
-							} 
+	//						} 
 							
-							DAO.ourfootBall.clear();
+//							DAO.ourfootBall.clear();
 							%>
 						</table>
 
